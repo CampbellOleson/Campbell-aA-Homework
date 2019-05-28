@@ -11,7 +11,7 @@ class KnightPathFinder
         possible_moves = []
     
         moves.each do |move|
-           possible_moves << [position[0] + move[0],position[1] + move[1]]
+           possible_moves << [position[0] + move[0], position[1] + move[1]]
         end
         possible_moves #=> returns an array of EVERY possible move from the position
     end
