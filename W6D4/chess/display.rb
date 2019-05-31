@@ -22,23 +22,24 @@ class Display
 
     def render
        system("clear")
-        board.each_with_index do |row,i1|
+        board.grid.each_with_index do |row,i1|
             complete_row = []
             row.each_with_index do |col,i2|
                 pos = [i1, i2]
                 # debugger
                 if pos == cursor.cursor_pos
-                    complete_row << board[i1][i2].symbol.colorize(:color => :white, :background => :black)
+                    complete_row << board.grid[i1][i2].symbol.colorize(:color => :white, :background => :black)
                 else
-                complete_row << board[i1][i2].symbol.colorize(:color => :white, :background => :red)
+                complete_row << board.grid[i1][i2].symbol.colorize(:color => :white, :background => :red)
                 end
             end
             puts complete_row.join
         end
     end
+
 end
-#nice catch!
-board = Board.new.populate_grid
+
+board = Board.new
 display = Display.new(board)
 
 
