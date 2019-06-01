@@ -1,6 +1,4 @@
 require 'singleton'
-# require_relative 'bishop'
-
 class Piece
     attr_accessor :pos, :color, :symbol, :board
     def initialize(color, pos, symbol, board=nil)
@@ -15,7 +13,7 @@ class NullPiece < Piece
     include Singleton
     def initialize
         @color = " "
-        @symbol = " "
+        @symbol = :empty
     end
 end
 

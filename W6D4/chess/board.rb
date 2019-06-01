@@ -23,12 +23,10 @@ class Board
             row.each_with_index do |col, i2|
                 pos = [i,i2]
                 cls = piece_maps.find_key(pos)
-                # debugger
                 grid[i][i2] = cls.new("white", pos, cls.to_s[0], self)
             end
         end 
         
-
         black.each_with_index do |row, i|
             row.each_with_index do |col, i2|
                 pos = [i+6,i2]
@@ -74,26 +72,3 @@ class Hash
     end
 end
                 
-
-
-
-# b = Board.new
-# a = Rook.new("white", [4,4], :B, b)
-# p a._moves
-# d = Bishop.new("white", [4,4], :B, b)
-# p d._moves
-# c = Queen.new("white", [4,4], :B, b)
-# p c._moves
-
-# b = Board.new
-# a = King.new("white", [4,4], :B, b)
-# d = Knight.new("white", [4,4], :B, b)
-# p d._moves
-# p a._moves
-
-# a = Pawn.new("white", [1,4], :B, b)
-# p a.moving
-
-# b = Board.new 
-# p b.populate_grid
-# p
