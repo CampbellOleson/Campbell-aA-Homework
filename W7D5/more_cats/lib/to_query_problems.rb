@@ -343,21 +343,26 @@ def toys_that_jet_owns_sub
 
   # USE A SUBQUERY
   execute(<<-SQL)
-    SELECT 
-    cats.name, toys.name
-    FROM toys
-    JOIN toys ON cattoys.toy_id = toys.id 
-    JOIN cats ON cattoys.cat_id = cats.id 
-    WHERE cats.name != 'Jet' AND toys.id IN (
-        SELECT 
-          toys.id 
-        FROM 
-          toys
-        JOIN toys ON toys.id = cattoys.toy_id
-        JOIN cats ON cats.id = cattoys.cat_id
-        WHERE 
-          cats.name = 'Jet'
-    )
-    ORDER BY cats.name ASC
+  SELECT
+  cats.name, toys.name 
+  FROM
+    toys
+  JOIN
+    cattoys ON toys.id = cattoys.toy_id 
+  JOIN
+    cats ON cats.id= cattoys.cat_id 
+  WHERE
+    cats.name != 'Jet' AND toys.id IN ( SELECT 
+                                          toys.id 
+                                        FROM 
+                                          toys
+                                        JOIN 
+                                          cattoys ON toys.id = cattoys.toy_id 
+                                        JOIN 
+                                          cats  ON cats.id= cattoys.cat_id 
+                                        WHERE 
+                                          cats.name = 'Jet')
+  ORDER BY
+    cats.name ASC;
   SQL
 end
