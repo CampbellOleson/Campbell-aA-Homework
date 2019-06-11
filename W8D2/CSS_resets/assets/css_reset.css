@@ -1,0 +1,23 @@
+body, header, aside, section, h1, h2, footer {
+    margin: 0;
+    padding: 0;
+    boarder: 0;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    /* width: 80%; */
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    width: inherit;
+}
