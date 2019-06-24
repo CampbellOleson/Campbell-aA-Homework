@@ -1,0 +1,18 @@
+<% method = (user ? :destroy : :post) %>
+
+<form action="<%= session_url %> "method ="post">
+<input type="hidden" name="_method" value="<%=method%>">
+<input
+  type="hidden"
+  name="authenticity_token"
+  value="<%=form_authenticity_token%>">
+
+    <label for="email_field">Email </label>
+    <input type="text" name="user[email]" id="email_field">
+
+    <label for="password_field"> Password </label>
+    <input type="text" name="user[password]" id="password_field">
+
+    <button action="<%= session_url %>">Submit</button>
+    
+</form>

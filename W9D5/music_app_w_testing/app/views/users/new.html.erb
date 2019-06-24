@@ -1,0 +1,9 @@
+<h2>Welcome the Music App!<h2>
+<h3>Create your free account:<h3>
+<p> <%= flash[:error] %> </p>
+
+<% @user.errors.full_messages.each do |error| %>
+    <h4><%=error%></h4>
+<% end %>
+
+<%= render 'form', user: @user %>

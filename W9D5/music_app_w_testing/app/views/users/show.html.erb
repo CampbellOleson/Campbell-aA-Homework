@@ -1,0 +1,6 @@
+<h2><%=flash[:success]%></h2>
+<h2>Welcome, user <%=@user.id%></h2>
+<a href="<%=users_url%>">Home Page</a>
+<%= yield :destroy %>
+
+
