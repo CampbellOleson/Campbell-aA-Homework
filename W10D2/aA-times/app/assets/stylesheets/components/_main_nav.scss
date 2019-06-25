@@ -1,0 +1,51 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-nav > ul > li {
+    display: flex;
+    margin: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    span {
+        margin-left: 20px;
+    }
+}
+
+
+
+.right-nav > ul > li {
+    display: flex;
+    margin: 20px;
+}
+
+// .icon{
+//     font-size: 20px;
+// }
+
+.right-nav > ul > li:last-of-type {
+    font-size: 25px;
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+    color: gray;
+    background-color: white;
+    border-color: white;
+}
+
+.left-nav span {
+
+}
+
+
+.right-nav i {
+
+}
