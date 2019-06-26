@@ -1,5 +1,6 @@
 .col {
-  // ...
+  float: left; 
+  // box-sizing: block;
 }
 
 /* Attribute selector targeting all elements
@@ -7,7 +8,7 @@ with a class attribute containing 'col-' */
 [class*='col-'] {
   // ...
 }
-
+ 
 [class*='col-']:last-of-type {
   // ...
 }
@@ -17,3 +18,37 @@ with a class attribute containing 'col-' */
     // width:
   }
 }
+
+.col-left {
+  width: 25%;
+}
+
+.col-mid{
+  width: 42%;
+}
+
+.col-right{
+  width: 33%;
+  // margin: 100px;
+}
+
+.clearfix::after { 
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-right-a {
+  width: 40%;
+  margin: 10px;
+}
+
+.col-right-b {
+  width: 40%;
+  margin: 10px;
+}
+
+.col-right-bottom{
+  width: 100%;
+}
+

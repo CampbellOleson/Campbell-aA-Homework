@@ -16,7 +16,6 @@
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	
 }
 
 .language-nav a {
@@ -34,7 +33,6 @@
 .logo {
 	max-width: 400px;
 	margin-top: 10px;
-	margin: 0 auto;
 }
 
 .masthead-links {
@@ -43,20 +41,15 @@
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	flex-direction: row;
 }
 
-.masthead-links ul{
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	position: relative;
-	right: 15px;
-}
 
 .masthead-links li {
 	margin-left: 10px;
 	border-right: 1px solid $light-gray;
+	span{
+		margin-right: 7px;
+	}
 }
 
 .masthead-links button {
@@ -85,4 +78,14 @@
 	color: green;
 }
 
+.language-nav a:hover {
+	background-color: $lightest-gray;
+	cursor: pointer;
+	text-decoration: underline;
+	
+}
+
+.masthead-links a { 
+	text-decoration: underline;
+}
 

@@ -1,0 +1,26 @@
+.sections-nav {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+	position: relative;
+}
+
+.sections-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.sections-nav ul li {
+   margin: 7px;
+}
+
+.sections-nav ul li strong {
+    text-decoration: underline;
+}
+
+.sections-nav ul li:hover {
+    cursor: pointer;
+}

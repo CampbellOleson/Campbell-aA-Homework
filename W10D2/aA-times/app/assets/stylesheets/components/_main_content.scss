@@ -1,0 +1,100 @@
+.col-right > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.underlineable {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.underlineable:hover {
+    text-decoration: underline;
+}
+
+.col-right > article > span {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.col-right ul {
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+.col-right ul li {
+
+    list-style-type: disc ;
+    font-weight: bold;
+    list-style-position: inside;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.img-div {
+    overflow: hidden;
+    display: flex;
+    justify-content: center
+}
+
+.signup-form{ 
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.signup-form input{
+    flex: 1;
+    
+}
+
+#button2 { 
+    border-radius: 0px;
+}
+
+.col-right-bottom {
+    text-align: center;
+}
+
+.smallwords {
+    color: gray;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.ul-list1{
+    list-style-type: disc ;
+    list-style-position: inside;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.author {
+    color: gray;
+    font-size: 16px;
+}
+
+
+.col-left a:hover {
+    text-decoration:underline;
+    color: blue;
+
+}
+
+.col-right > h2 {
+    margin-top: 10px;
+}
