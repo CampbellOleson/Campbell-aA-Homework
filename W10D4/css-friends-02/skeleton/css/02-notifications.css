@@ -1,0 +1,11 @@
+/* PHASE 2: Notifications */
+
+.badge {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
