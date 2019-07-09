@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 60px;
+    color: slateblue;
+    font-family: sans-serif;
+    font-weight: 900;
+    position: relative;
+    left: 140px;
+}
+
+.test-background {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+}
+
+.ttt-board{
+    max-width: 500px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+
+.ttt-square {
+    position: relative;
+    width: 33%;
+    min-height: 33%;
+    outline: 7px solid black;
+    list-style: none;
+    background-color: blueviolet;
+}
+
+.ttt-square:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.selected-square {
+    background-color: lime;
+}
+
+.selected-square > span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 125px;
+    font-weight: 700;
+    color:black;
+    font-family: sans-serif;
+}
