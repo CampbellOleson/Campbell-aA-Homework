@@ -1,0 +1,46 @@
+html,
+body,
+main,
+h1,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.clock {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  margin: 0 auto;
+  width: 550px;
+  height: 100px;
+  border: 2px solid black;
+  color: white;
+  font-size: 38px;
+  padding: 12px;
+  font-family: "Orbitron";
+}
+
+div > h1 {
+  font-family: "Open Sans";
+  display: block;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px;
+}
