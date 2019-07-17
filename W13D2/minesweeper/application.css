@@ -1,0 +1,25 @@
+.tile {
+    background-color: lightgray;
+    display: inline-block;
+    padding: 10px; 
+    height: 100%;
+    width: 20px;
+    border-style: outset;
+}
+
+.board {
+    margin: 0 auto;
+    width: 500px;
+    /* height: 500px; */
+}
+
+.row {
+    padding:0px;
+    /* height: 20px; */
+    /* border-style: outset; */
+    display: inline-block;
+}
+
+.hide {
+    color:transparent;
+}
