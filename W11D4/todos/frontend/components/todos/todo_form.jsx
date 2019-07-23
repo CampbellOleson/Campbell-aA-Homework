@@ -55,7 +55,6 @@ class TodoForm extends React.Component {
     this.setState({
       [name]: value
     });
-    // debugger
   }
 }
 

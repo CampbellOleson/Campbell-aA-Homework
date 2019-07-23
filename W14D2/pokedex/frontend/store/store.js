@@ -5,3 +5,5 @@ import thunk from "../middleware/thunk";
 
 export const configureStore = () =>
   createStore(rootReducer, applyMiddleware(logger, thunk));
+
+window.store = configureStore;

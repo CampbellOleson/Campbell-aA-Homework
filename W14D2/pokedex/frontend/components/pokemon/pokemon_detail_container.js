@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { requestAllPokemon } from "../../actions/pokemon_action";
 import PokemonDetail from "./pokemon_detail";
+import ItemDetail from "./item_detail";
 
 const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.pokemonId;
@@ -11,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    requestSinglePokemon: () => dispatch(requestSinglePokemon())
+    requestSinglePokemon: id => dispatch(requestSinglePokemon(id))
   };
 };
 
