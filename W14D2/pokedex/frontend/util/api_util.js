@@ -5,6 +5,11 @@ export const fetchAllPokemon = () => {
   return $.get("/api/pokemon");
 };
 
+// routes => tell this which controller#action to go to
+// controller
+// jbuilder
+
+
 export const catchAPokemon = id => {
   return $.get(`/api/pokemon/${id}`);
 };

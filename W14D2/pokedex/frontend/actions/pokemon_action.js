@@ -6,6 +6,7 @@ import * as APIUtil from "../util/api_util";
 export const receiveAllPokemon = pokemon => ({
   type: RECEIVE_ALL_POKEMON,
   pokemon
+  // pokemon: {pokemon json object}
 });
 
 export const receiveSinglePokemon = payload => ({
@@ -17,8 +18,9 @@ export const requestAllPokemon = () => dispatch =>
   APIUtil.fetchAllPokemon().then(pokemon =>
     dispatch(receiveAllPokemon(pokemon))
   );
+// pokemon is jbuilder json response
 
-export const requestSinglePokemon = id => dispatch =>
+export const requestSinglePokemon = id => dispatch => 
   APIUtil.catchAPokemon(id).then(pokemon =>
     dispatch(receiveSinglePokemon(pokemon))
   );
